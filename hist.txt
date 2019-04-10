@@ -1,0 +1,211 @@
+    1  reboot
+    2  shutdown -r now 
+    3  shutdown -h now 
+    4  sudo add-apt-repository ppa:graphics-drivers
+    5  sudo apt-get update
+    6  sudo apt-get install nvidia-410
+    7  sudo apt-get install mesa-common-dev
+    8  sudo apt-get install freeglut3-dev
+    9  reboot
+   10  nvidia-smi
+   11  shutdown -h nwo 
+   12  shutdown -h now 
+   13  nvidia-smi
+   14  sudo apt-get install exfat-fuse
+   15  python
+   16  sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.1-cp27-cp27m-linux_x86_64.whl
+   17  python
+   18  anaconda
+   19  python
+   20  cd Downloads
+   21  bash Anaconda2-5.2.0-Linux-x86_64.sh
+   22  bash Anaconda2-2018.12-Linux-x86_64.sh
+   23  python
+   24  conda create -n tensorflow python=2.7 
+   25  source activate tensorflow
+   26  cd /package
+   27  cd /home/bigdatalab04/Downloads
+   28  pip install --ignore-installed --upgrade tensorflow-1.7.0-cp27-cp27mu-manylinux1_x86_64.whl 
+   29  python
+   30  cd /home/bigdatalab04/Downloads
+   31  sh ./pycharm.sh
+   32  sudo find ./ -name ".DS_Store" -depth -exec rm {} \;
+   33  $ cd show-attend-and-tell-tensorflow
+   34  cd show-attend-and-tell-tensorflow
+   35  sh ./pycharm.sh
+   36  chmod +x ./download.sh
+   37  ./download.sh
+   38  l.
+   39  ls -d.*
+   40  ls -a
+   41  rm .DS_Store
+   42  ls -a
+   43  conda install pytorch torchvision -c soumith
+   44  python
+   45  chmod +x flickr30k_setup.sh
+   46  ./flickr30k_setup.sh
+   47  chmod +x ./set_up.sh
+   48  ./set_up.sh
+   49  python
+   50  anaconda
+   51  Anaconda
+   52  wget -c http://www.lua.org/ftp/lua-5.3.0.tar.gz 
+   53  sudo apt-get install libreadline5
+   54  sudo apt-get install libreadline-gplv2-dev
+   55  cd lua-5.3.0
+   56  make linux
+   57  sudo make install
+   58  $ lua
+   59  lua
+   60  python
+   61  pip installhttp://download.pytorch.org/whl/cu75/torch-0.1.12.post2-cp27-none-linux_x86_64.whl
+   62  python
+   63  pip install http://download.pytorch.org/whl/cu75/torch-0.1.12.post2-cp27-none-linux_x86_64.whl
+   64  sh ./pycharm.sh
+   65  pycharm
+   66  sh ./pycharm.sh
+   67  sudo fuser -v /dev/nvidia
+   68  free
+   69  python
+   70  free
+   71  bree
+   72  free
+   73  freee
+   74  free
+   75  free
+   76  watch -n 1 nvidia-smi
+   77  free
+   78  ANCONDA2
+   79  anconda2
+   80  anconda
+   81  free
+   82  free
+   83  nvidia-smi-l
+   84  nvidia-smi
+   85  nvidia=smi
+   86  nvidia-smi
+   87  nvidia=smi
+   88  nvidia-smi
+   89  strings /usr/lib/libstdc++.so.6 | grep GLIBCXX
+   90  freee
+   91  free
+   92  find / -name "libstdc++.so*"
+   93  cp /home/bigdatalab04/anaconda2/pkgs/libstdcxx-ng-8.2.0-hdf63c60_1/x86_64-conda_cos6-linux-gnu/sysroot/lib/libstdc++.so.6.0.25
+   94  cp--help
+   95  cp/home/bigdatalab04/anaconda2/pkgs/libstdcxx-ng-8.2.0-hdf63c60_1/x86_64-conda_cos6-linux-gnu/sysroot/lib/libstdc++.so.6.0.25
+   96  free
+   97  strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+   98  free
+   99  freee
+  100  free
+  101  fre
+  102  free
+  103  find / -name "libstdc++.so*"
+  104  cp/home/bigdatalab04/anaconda2/pkgs/libstdcxx-ng-8.2.0-hdf63c60_1/x86_64-conda_cos6-linux-gnu/sysroot/lib/libstdc++.so.6.0.25
+  105  cp/home/bigdatalab04/anaconda2/pkgs/libstdcxx-ng-8.2.0-hdf63c60_1/x86_64-conda_cos6-linux-gnu/sysroot/lib/libstdc++.so.6.0.25/usr/lib64
+  106  /usr/local/cuda/libnvvp/nvvp.ini
+  107  free
+  108  free
+  109  nvidia-smi
+  110  free
+  111  conda config --add channels soumith
+  112  conda update pytorch torchvision
+  113  sh ./pycharm.sh
+  114  conda install keras
+  115  sh ./pycharm.sh
+  116  free
+  117  NIVDIA-SMI
+  118  nvidia-smi
+  119  python
+  120  free
+  121  sh ./pycharm.sh
+  122  ifconfig
+  123  ping baidu.com
+  124  sudo apt install axel
+  125  axel -n 5000 http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz
+  126  git clone git@github.com:zalandoresearch/fashion-mnist.git
+  127  git clone git@github.com:zalandoresearch/fashion-mnist.git
+  128  ls
+  129  cd MNIST_data/
+  130  git clone git@github.com:zalandoresearch/fashion-mnist
+  131  whoami
+  132  ifconfig
+  133  whoami
+  134  ifconfig
+  135  sudo apt install ssh
+  136  service ssh start
+  137  sudo apt install sshd
+  138  sudo apt install ssh-server
+  139  sudo apt install openssh-server
+  140  service sshd start
+  141  ifconfig
+  142  netstat
+  143  netstat|grep "ssh"
+  144  netstat|grep "22"
+  145  sudo service ssh restart
+  146  ls
+  147  pythohn\
+  148  sudo apt-get install libjpeg62:i386 libxinerama1:i386 libxrandr2:i386 libxtst6:i386 ca-certificates
+  149  axel -n 5000 https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+  150  python -V
+  151  conda list 
+  152  source activate python3
+  153  conda info --envs
+  154  conda create -n python3
+  155  conda activate python3
+  156  ls
+  157  python -V
+  158  python 
+  159  conda update conda
+  160  conda activate base
+  161  conda update conda
+  162  conda info --envs
+  163  conda activate python3
+  164  python -V
+  165  python 
+  166  conda remove -n python3 --all
+  167  source deactivate
+  168  source activate base
+  169  history
+  170  conda deactivate
+  171  conda remove -n python3 --all
+  172  sudo conda remove -n python3 --all
+  173  conda info --envs
+  174  conda remove -n python3
+  175  conda remove -n python3 python3
+  176  conda info --envs
+  177  conda create -n python3 python=3
+  178  conda source activate python3
+  179  source activate python3
+  180  python -V
+  181  source deactivate 
+  182  conda source deactivate 
+  183  conda deactivate
+  184  python -V
+  185  apt-get install software-properties-common
+  186  sudo apt-get install software-properties-common
+  187  sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
+  188  sudo apt-get update
+  189  sudo apt install mysql-server-5.6
+  190  sudo apt install mysql-client-5.6
+  191  service mysql start
+  192  mysql -uroot -p
+  193  jupyter-notebook &
+  194  cd Downloads/
+  195  git clone https://github.com/Liyunfan1998/advDataAnalysis_HW2
+  196  cd advDataAnalysis_HW2/
+  197  git pull
+  198  '/home/bigdatalab04/Downloads/Fashion-MNIST' 
+  199  git add .
+  200  git commit -m 'train'
+  201  git config --global user.email "16302010002@fudan.edu.cn"
+  202  git config --global user.name "Liyunfan"
+  203  git config --global user.name "Liyunfan1998"
+  204  git commit -m 'train'
+  205  git push -u origin master
+  206  git add .
+  207  git commit -m 'train done'
+  208  git push -u origin master
+  209  vim listOfWebSites 
+  210  '/home/bigdatalab04/Downloads/cifar_10.tgz' 
+  211  history >hist.txt
