@@ -1,8 +1,7 @@
-# -*- coding:utf-8 -*-
 import tensorflow as tf
 import pickle
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import random
 import os
 
@@ -145,7 +144,7 @@ sess.run(tf.global_variables_initializer())
 
 #保存模型
 saver = tf.train.Saver()
-saveFile='../cifar10/CNN_cifar10.ckpt'
+saveFile='./CNNmodles/cifar10/CNN_cifar10.ckpt'
 
 # 使用tensorboard ，保存至LOG文件夹
 merged = tf.summary.merge_all()
@@ -156,7 +155,7 @@ batch_size = 100
 # 总共有多少个批次
 n_batch = 50000 // batch_size
 
-Xtr, Ytr, Xte, Yte=load_CIFAR10('../cifar_10/cifar-10-batches-py/')
+Xtr, Ytr, Xte, Yte=load_CIFAR10('./cifar-10-batches-py/')
 
 test_a=list()
 epoch_num=41
@@ -178,9 +177,12 @@ for epoch in range(epoch_num):
 train_writer.close()
 saver.save(sess, saveFile)
 
-"""
+
 plt.plot(range(epoch_num),test_a)
 plt.xlabel("epoch")
 plt.ylabel("test accuracy")
 plt.show()
-"""
+
+
+
+

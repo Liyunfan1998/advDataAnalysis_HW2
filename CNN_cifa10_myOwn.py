@@ -9,7 +9,7 @@ import tensorflow as tf
 import numpy as np
 import input_data
 # cifa = input_data.read_data_sets("../cifar_10", one_hot=True)
-data_dir = '/Users/liyunfan/targetDirectory/cifar_10/cifar-10-batches-py'
+data_dir = '../cifar_10/cifar-10-batches-py'
 
 
 # In[ ]:
@@ -18,7 +18,7 @@ data_dir = '/Users/liyunfan/targetDirectory/cifar_10/cifar-10-batches-py'
 def load_CIFAR_batch(filename):
   """ load single batch of cifar """
   with open(filename, 'rb') as f:
-    datadict = pickle.load(f)
+    datadict = pickle.load(f,encoding='latin1')
     X = datadict['data']
     Y = datadict['labels']
     X = X.reshape(10000, 3, 32,32).transpose(0,2,3,1).astype("float")
@@ -276,7 +276,7 @@ for step in range(max_steps):
 
 
 """def next_batch(datasetX,datasetY,batch_size,nowAt):
-    return datasetX[nowAt:nowAt+batch_size],datasetY[nowAt:nowAt+batch_size],nowAt+batch_size"""pass
+    return datasetX[nowAt:nowAt+batch_size],datasetY[nowAt:nowAt+batch_size],nowAt+batch_size"""
 
 
 # In[ ]:
@@ -292,7 +292,6 @@ correct_prediction = tf.equal(tf.argmax(pred,1), tf.argmax(y_,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
 sess.run(tf.initialize_all_variables())
 """
-pass
 
 
 # In[ ]:
@@ -311,7 +310,6 @@ pass
     train_step.run(feed_dict={x: Xtr, y_: Ytr, keep_prob: 0.5})
 print ("test accuracy %g"%accuracy.eval(feed_dict={
 x: Xte, y_: Yte, keep_prob: 1.0}))"""
-pass
 
 
 # In[ ]:
