@@ -1,0 +1,47 @@
+2019-04-13 16:08:43.628780: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From cc.py:211: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+None
+('epoch:', '0', ' batch:', 0, 'cross_entropy', 108.56536)
+('epoch:', '0', ' batch:', 100, 'cross_entropy', 11.505905)
+('epoch:', '0', ' batch:', 200, 'cross_entropy', 9.721112)
+('epoch:', '0', ' batch:', 300, 'cross_entropy', 8.665804)
+Traceback (most recent call last):
+  File "cc.py", line 319, in <module>
+    accuracy = sess.run([top_k_op], feed_dict={x_image: XteAll, y_: YteAll, keep_prob: 1})
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Matrix size-incompatible: In[0]: [128,320000], In[1]: [4096,1024]
+	 [[node MatMul (defined at cc.py:129) ]]
+
+Caused by op u'MatMul', defined at:
+  File "cc.py", line 207, in <module>
+    activation_function=tf.nn.relu,stddev=0.04, wl=0.004)
+  File "cc.py", line 129, in add_layer
+    Wx_plus_b = mul_func(inputs, Weights)+biases
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/ops/math_ops.py", line 2455, in matmul
+    a, b, transpose_a=transpose_a, transpose_b=transpose_b, name=name)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/ops/gen_math_ops.py", line 5333, in mat_mul
+    name=name)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 3300, in create_op
+    op_def=op_def)
+  File "/Users/liyunfan/targetDirectory/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1801, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+InvalidArgumentError (see above for traceback): Matrix size-incompatible: In[0]: [128,320000], In[1]: [4096,1024]
+	 [[node MatMul (defined at cc.py:129) ]]
+

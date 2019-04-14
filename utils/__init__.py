@@ -1,0 +1,35 @@
+CNN_FM.py
+CNN_fashion_mnist.py
+dataset.py
+cifar10.py
+tutorials
+	dataset.py
+	imdb.py
+	mnist.py
+	weather.py
+	cifar10.py
+	download.py
+	inception.py
+	reinforcement_learning.py
+	__init__.py
+	coco.py
+	europarl.py
+	inception5h.py
+	cache.py
+	convert.py
+	knifey.py
+	vgg16.py
+utils
+	__init__.py
+	binary_mnist_input.py
+	candidate.py
+	cifar10.py
+	cifar100_input.py
+	cifar10_input.py
+	cifar_DetaNet.py
+	dataset.py
+	evolution_algo.py
+	loss.py
+	modules.py
+	svhn.py
+	train.py
